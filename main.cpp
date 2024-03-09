@@ -23,7 +23,9 @@ int main()
          {
             for(int i = 0; i < M-1; i++)
             {
-               
+               int a = N;
+               a *= N;
+               cout << a;
             }
          }
       }
