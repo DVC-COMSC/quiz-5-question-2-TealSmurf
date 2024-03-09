@@ -12,19 +12,9 @@ int main()
    {
       for(int i = 0; i < M; i++)
       {
-         if(i == 0)
-         {
-            cout << "1";
-         }
-         else
-         {
             int a = 1;
-            for(int j = 0; j < M-1; j++)
-            {
-               a *= N;
-               cout << a << " ";
-            }
-         }
+            a *= N;
+            cout << a << " ";
       }
    }
   
