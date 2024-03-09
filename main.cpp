@@ -10,11 +10,11 @@ int main()
 
    if((0 < N && N < 10) && (1 <= M && M <= 10))
    {
-      for(int i = 0; i < M; i++)
+      int a = 1;
+      for(int i = 0; i <= M; i++)
       {
-            int a = 1;
-            a *= N;
             cout << a << " ";
+            a *= N;
       }
    }
   
