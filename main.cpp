@@ -7,25 +7,22 @@ int main()
    
    cout << "Enter your N, M(0 < N < 10,  1 <= M <= 10): ";
    cin >> N >> M;
-   if(0 < N < 10 && 1 <= M <= 10)
+
+   if((0 < N && N < 10) && (1 <= M && M <= 10))
    {
       for(int i = 0; i < M; i++)
       {
-         if(N = 0)
+         if(i == 0)
          {
-            cout << 0;
-         }  
-         else if(i = 0)
-         {
-            cout << 1;
+            cout << "1";
          }
          else
          {
-            for(int i = 0; i < M-1; i++)
+            int a = 1;
+            for(int j = 0; j < M-1; j++)
             {
-               int a = N;
                a *= N;
-               cout << a;
+               cout << a << " ";
             }
          }
       }
